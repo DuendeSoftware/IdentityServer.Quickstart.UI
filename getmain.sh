@@ -7,12 +7,10 @@ curl -L -o ui.zip "$SOURCE"
 
 unzip -d ui ui.zip
 
-[[ -d Quickstart ]] || mkdir Quickstart
-[[ -d Views ]] || mkdir Views
+[[ -d Pages ]] || mkdir Pages
 [[ -d wwwroot ]] || mkdir wwwroot
 
-cp -r ./ui/IdentityServer.Quickstart.UI-main/Quickstart/* Quickstart
-cp -r ./ui/IdentityServer.Quickstart.UI-main/Views/* Views
+cp -r ./ui/IdentityServer.Quickstart.UI-main/Pages/* Pages
 cp -r ./ui/IdentityServer.Quickstart.UI-main/wwwroot/* wwwroot
 
 rm -rf ui ui.zip
