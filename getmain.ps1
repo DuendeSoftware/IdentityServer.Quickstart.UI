@@ -4,12 +4,10 @@ Invoke-WebRequest $source -OutFile ui.zip
 
 Expand-Archive ui.zip
 
-if (!(Test-Path -Path Quickstart))  { mkdir Quickstart }
-if (!(Test-Path -Path Views))       { mkdir Views }
+if (!(Test-Path -Path Pages))       { mkdir Pages }
 if (!(Test-Path -Path wwwroot))     { mkdir wwwroot }
 
-copy .\ui\IdentityServer.Quickstart.UI-main\Quickstart\* Quickstart -recurse -force
-copy .\ui\IdentityServer.Quickstart.UI-main\Views\* Views -recurse -force
+copy .\ui\IdentityServer.Quickstart.UI-main\Pages\* Pages -recurse -force
 copy .\ui\IdentityServer.Quickstart.UI-main\wwwroot\* wwwroot -recurse -force
 
 del ui.zip
