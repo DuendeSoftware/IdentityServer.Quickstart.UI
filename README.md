@@ -3,6 +3,8 @@ This repo contains a sample UI for login, logout, grant management and consent.
 
 Note that the repo doesn't include solution and project files, but should be copied to your project as described below.
 
+This repo contains the UI for the in-memory test user store as a starting point, see [here](https://github.com/DuendeSoftware/IdentityServer.Quickstart.UI.AspNetIdentity) for a version using Microsoft's ASP.NET Identity user management library.
+
 ## Adding the quickstart UI
 This repo contains the pages, models, views and CSS files needed for the UI. Simply download/clone it and copy the folders into the web project.
 
