@@ -121,6 +121,9 @@ public class Index : PageModel
 
                 if (context != null)
                 {
+                    // This "can't happen", because if the ReturnUrl was null, then the context would be null
+                    ArgumentNullException.ThrowIfNull(Input.ReturnUrl, nameof(Input.ReturnUrl));
+
                     if (context.IsNativeClient())
                     {
                         // The client is native, so this change in how to
